@@ -43,13 +43,18 @@
 }
 
 .nav-links.open {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 250px;
+    background-color: var(--header-background-color);
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--header-background-color);
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-links li {
@@ -91,6 +96,7 @@
 
     .nav-links.open {
         display: flex;
+        right: 0;
     }
 
     .nav-links li a {

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/header/Header"
+import Header from "../../components/header/Header";
 import Vertiline from "../../components/design/Vertiline";
 import Skill from "../../components/skill/Skill";
 import './About.css';

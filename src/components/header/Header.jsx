@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-    let navOpen = false;
+    const [navOpen, setNavOpen] = useState(false);
 
     const toggleNav = () => {
-        navOpen = !navOpen;
+        setNavOpen(!navOpen);
     };
 
     return (
@@ -19,16 +19,16 @@ const Header = () => {
                 </button>
                 <ul className={`nav-links ${navOpen ? 'open' : ''}`}>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/" onClick={toggleNav}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about">Bio</NavLink>
+                        <NavLink to="/about" onClick={toggleNav}>Bio</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/portfolio">Portfolio</NavLink>
+                        <NavLink to="/portfolio" onClick={toggleNav}>Portfolio</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact">Contact</NavLink>
+                        <NavLink to="/contact" onClick={toggleNav}>Contact</NavLink>
                     </li>
                 </ul>
             </div>
