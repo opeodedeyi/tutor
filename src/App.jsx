@@ -5,6 +5,7 @@ import Portfolio from './pages/portfolio/Portfolio';
 import Contact from './pages/contact/Contact';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './reset.css';
+import './App.css';
 
 
 function App() {

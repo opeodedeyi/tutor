@@ -1,0 +1,17 @@
+.vertical-line {
+    position: fixed;
+    bottom: 80px;
+    right: 100px;
+    background-color: var(--special-color);
+    height: 150px;
+    width: 14px;
+}
+
+@media screen and  (max-width: 768px) {
+    .vertical-line {
+        bottom: 40px;
+        right: 24px;
+        height: 120px;
+        width: 10px;
+    }
+}

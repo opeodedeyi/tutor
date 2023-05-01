@@ -1,18 +1,27 @@
 import React from "react";
 import Header from "../../components/header/Header"
+import Vertiline from "../../components/design/Vertiline";
+import Skill from "../../components/skill/Skill";
 import './About.css';
 
 const About = () => {
     return (
         <>
-            <div>
-                <Header />
+            <Header />
+
+            <div className="about-background-image"></div>
+
+            <div className="about-body">
+                <div className="about-body-content">
+                    <p className="about-body-title">About me</p>
+                    <p className="about-body-text">Opeyemi David Odedeyi is a highly skilled Full-stack Engineer with a strong background in Economics and a Master's degree in Applied Artificial Intelligence and Data Analytics. He has cultivated expertise in a wide range of programming languages and frameworks, including HTML, CSS, JavaScript, Python, NodeJS, VueJs, Nuxt, React, and Django among others. Opeyemi's passion for creating visually appealing and user-friendly websites has propelled him to excel in the field of web development.
+                    Opeyemi's commitment to producing high-quality work, coupled with his sharp eye for detail, ensures that each project he undertakes meets and exceeds customer expectations. As a dedicated professional who excels in both front-end and back-end development, Opeyemi David Odedeyi is well-equipped to create innovative and scalable web applications that deliver outstanding performance and cater to the unique needs of each client.</p>
+
+                    <Skill />
+                </div>
             </div>
-            <div class="about-body">
-                Opeyemi Odedeyi is a dedicated and passionate student currently pursuing a degree in Applied Artificial Intelligence and Data Analytics. With a strong foundation in programming, Opeyemi has developed expertise in various technologies, including CSS, React, Vue, and Node.js.
-                Driven by a natural curiosity and a desire to create innovative solutions, Opeyemi constantly seeks to expand their knowledge and stay up-to-date with the latest advancements in the field of technology. As a result, they have been able to apply their skills to various projects, demonstrating their ability to adapt and excel in different environments.
-                Outside of academics, Opeyemi is an active member of the tech community, always eager to collaborate and learn from others. Through hard work, determination, and a genuine love for programming, Opeyemi Odedeyi is well on their way to making a significant impact in the world of artificial intelligence and data analytics.
-            </div>
+
+            <Vertiline />
         </>
     )
 }
