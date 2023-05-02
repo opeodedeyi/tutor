@@ -5,6 +5,7 @@ const FormInput = ( props ) => {
     if (props.type === 'textarea') {
         return (
             <>
+                <label className="form-label">{ props.input }</label>
                 <textarea
                     className="form-input form-textarea"
                     placeholder={props.placeholder}
@@ -16,6 +17,7 @@ const FormInput = ( props ) => {
     } else {
         return (
             <>
+                <label className="form-label">{ props.input }</label>
                 <input
                     className="form-input"
                     type={props.type}

@@ -3,7 +3,7 @@
 }
 
 .contact-body-content {
-    padding: 120px 100px 120px;
+    padding: 60px 100px 120px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -37,7 +37,7 @@
     margin-bottom: 80px;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
     .contact-body-content {
         flex-direction: column;
     }
@@ -60,7 +60,7 @@
 
 @media screen and  (max-width: 768px) {
     .contact-body-content {
-        padding: 50px 40px;
+        padding: 30px 20px;
         /* flex-direction: column; */
     }
 

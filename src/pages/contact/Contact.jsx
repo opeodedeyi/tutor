@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "../../components/header/Header";
-import Vertiline from "../../components/design/Vertiline";
 import FormInput from "../../components/formInput/FormInput";
 import './Contact.css';
 
@@ -27,21 +26,22 @@ const Contact = () => {
                         
                         <FormInput 
                             type="text" 
-                            placeholder="Fullname" 
-                            input="Fullname"
+                            placeholder="What should we call you?" 
+                            input="Your name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}/>
                         
                         <FormInput 
                             type="email" 
-                            placeholder="Email" 
-                            input="Email"
+                            placeholder="Where can we reach you? (Email, please!)" 
+                            input="Your email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}/>
 
                         <FormInput
                             type="textarea"
-                            placeholder="Message"
+                            placeholder="Spill the beans! (Your message here)"
+                            input="Your message"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}/>
 
@@ -51,8 +51,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
-            <Vertiline />
         </>
     )
 }
