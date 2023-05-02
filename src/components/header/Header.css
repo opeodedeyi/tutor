@@ -48,7 +48,7 @@
     right: -100%;
     height: 100%;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     background-color: var(--header-background-color);
     transition: right 0.3s ease-in-out;
     z-index: 100;

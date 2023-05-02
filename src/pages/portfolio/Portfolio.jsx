@@ -8,7 +8,7 @@ const Portfolio = () => {
             <div>
                 <Header />
             </div>
-            <div class="portfolio-body">
+            <div className="portfolio-body">
                 My portfolio page is in the works, please wait for future updates
             </div>
         </>
