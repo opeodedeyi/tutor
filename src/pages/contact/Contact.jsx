@@ -1,21 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/header/Header";
 import Vertiline from "../../components/design/Vertiline";
-import Formfield from "../../components/formfield/Formfield";
+import FormInput from "../../components/formInput/FormInput";
 import './Contact.css';
 
 const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log({ name, email, message });
+    };
     return (
         <>
             <Header />
 
             <div className="contact-body">
                 <div className="contact-body-content">
-                    <div className="contact-body-content-main">
+                    <form className="contact-body-content-main" action="https://formsubmit.co/opeyemiodedeyi@gmail.com" method="post">
+
                         <p className="contact-body-title">Let's Chat!</p>
+
                         <p className="contact-body-text">Got a burning question, a brilliant idea, or just want to chat about the mysteries of life and the universe? Don't hesitate, reach out, and let's get the conversation rolling! Remember, a good conversation is like a fine wine – it only gets better with time.</p>
-                        <Formfield />
-                    </div>
+                        
+                        <FormInput 
+                            type="text" 
+                            placeholder="Fullname" 
+                            input="Fullname"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}/>
+                        
+                        <FormInput 
+                            type="email" 
+                            placeholder="Email" 
+                            input="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}/>
+
+                        <FormInput
+                            type="textarea"
+                            placeholder="Message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}/>
+
+                    </form>
                     <div className="contact-body-content-socials">
                         <p className="contact-body-subtitle">Follow me</p>
                     </div>

@@ -9,6 +9,10 @@
     flex-wrap: nowrap;
 }
 
+.contact-body-content-main {
+    width: 100%;
+}
+
 .contact-body-title {
     font-size: 60px;
     font-weight: 800;
