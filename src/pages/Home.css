@@ -41,7 +41,7 @@
         url('../assets/images/background_image_big.jpeg');
     background-size: cover;
     background-position: center;
-    filter: brightness(80%);
+    filter: brightness(95%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -68,14 +68,14 @@
 
     .home-container-introduction {
         font-size: 30px;
-        padding: 0 20px 50px;
+        padding: 0 20px 80px;
     }
 
     .home-container-subtitle {
         font-size: 35px;
         line-height: 1.5;
         left: 80px;
-        bottom: 30px;
+        bottom: 60px;
         opacity: 0.1;
     }
 
