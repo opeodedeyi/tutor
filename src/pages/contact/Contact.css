@@ -34,12 +34,16 @@
     margin-right: 40px;
     line-height: 1.4;
     letter-spacing: 1.3px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width: 1200px) {
     .contact-body-content {
         flex-direction: column;
+    }
+
+    .contact-body-content-main {
+        margin-bottom: 60px;
     }
 }
 
