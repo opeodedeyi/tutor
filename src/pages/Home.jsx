@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/header/Header";
 import Vertiline from "../components/design/Vertiline";
 import './Home.css';
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Welcome";
+    }, []);
     return (
         <>
             <Header />

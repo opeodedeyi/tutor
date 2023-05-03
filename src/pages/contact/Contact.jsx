@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from 'emailjs-com';
 import Header from "../../components/header/Header";
 import FormInput from "../../components/formInput/FormInput";
@@ -47,6 +47,9 @@ const Contact = () => {
             setButtonText('Send message');
         }
     };
+    useEffect(() => {
+        document.title = "Contact Me";
+    }, []);
     return (
         <>
             <Header />
