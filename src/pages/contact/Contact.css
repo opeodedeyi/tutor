@@ -3,14 +3,22 @@
 }
 
 .contact-body-content {
+    /* cound add a background */
     padding: 60px 100px 120px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 .contact-body-content-main {
     width: 100%;
+    flex: 1;
+    max-width: 700px;
+}
+
+.contact-body-content-socials {
+    height: 100%;
+    width: 300px;
+    margin-left: 100px;
 }
 
 .contact-body-title {
@@ -37,6 +45,20 @@
     margin-bottom: 60px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 160px; /* width of container the social media icons are */
+}
+  
+.social-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
 @media screen and (max-width: 1200px) {
     .contact-body-content {
         flex-direction: column;
@@ -44,6 +66,14 @@
 
     .contact-body-content-main {
         margin-bottom: 60px;
+        max-width: 100%;
+    }
+
+    .contact-body-content-socials {
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px;
     }
 }
 

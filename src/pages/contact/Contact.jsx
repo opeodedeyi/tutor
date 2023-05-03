@@ -3,6 +3,10 @@ import emailjs from 'emailjs-com';
 import Header from "../../components/header/Header";
 import FormInput from "../../components/formInput/FormInput";
 import CustomButton from "../../components/CustomButton/CustomButton";
+import instagram from '../../assets/svg/instagram.svg'
+import twitter from '../../assets/svg/twitter.svg'
+import linkedin from '../../assets/svg/linkedin.svg'
+import github from '../../assets/svg/github.svg'
 import './Contact.css';
 
 const Contact = () => {
@@ -22,20 +26,18 @@ const Contact = () => {
         e.preventDefault();
         setButtonText('Sending message...');
 
-        // send the actual message
         const templateParams = {
             from_name: name,
             from_email: email,
             message: message,
         };
-        // console.log({ name, email, message });
 
         try {
             await emailjs.send(
-              'service_f8e7q9x',
-              'template_ckaajip',
-              templateParams,
-              'JdVIYOlNVbEzzXVF4'
+                'service_f8e7q9x',
+                'template_ckaajip',
+                templateParams,
+                'JdVIYOlNVbEzzXVF4'
             );
       
             setButtonText('Message delivered ✓');
@@ -44,9 +46,6 @@ const Contact = () => {
             console.error('Failed to send the message:', error);
             setButtonText('Send message');
         }
-
-        // setButtonText('Message delivered ✓');
-        // setTimeout(() => setButtonText('Send message'), 2000);
     };
     return (
         <>
@@ -85,6 +84,20 @@ const Contact = () => {
                     </form>
                     <div className="contact-body-content-socials">
                         <p className="contact-body-subtitle">Follow me</p>
+                        <div className="social-icons">
+                            <a href="https://www.instagram.com/odedeyiope/" target="_blank" rel="noopener noreferrer">
+                                <img src={instagram} alt="Instagram" className="social-icon" />
+                            </a>
+                            <a href="https://twitter.com/Opeodedeyi" target="_blank" rel="noopener noreferrer">
+                                <img src={twitter} alt="Twitter" className="social-icon" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/opeyemi-odedeyi/" target="_blank" rel="noopener noreferrer">
+                                <img src={linkedin} alt="LinkedIn" className="social-icon" />
+                            </a>
+                            <a href="https://github.com/opeodedeyi" target="_blank" rel="noopener noreferrer">
+                                <img src={github} alt="Github" className="social-icon" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
